@@ -1,0 +1,19 @@
+digraph G {
+"base_link" -> "base_compartment_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"odom" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 0.744\nBuffer length: 4.033\nMost recent transform: 1724589638.376353\nOldest transform: 1724589634.342947\n"];
+"base_compartment_1" -> "fertilizer_compartment_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"sprayer_arm_base_1" -> "camera_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"fertilizer_compartment_1" -> "sprayer_arm_base_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"sprayer_arm_base_1" -> "sprayer_arm_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"sprayer_arm_1" -> "mg995servo_motor_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"nozzle_link_1" -> "sg90servo_motor_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_link" -> "camera_color_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "left_wheel_f_1"[label=" Broadcaster: default_authority\nAverage rate: 0.744\nBuffer length: 4.033\nMost recent transform: 1724589638.376353\nOldest transform: 1724589634.342947\n"];
+"base_link" -> "left_wheel_r_1"[label=" Broadcaster: default_authority\nAverage rate: 0.744\nBuffer length: 4.033\nMost recent transform: 1724589638.376353\nOldest transform: 1724589634.342947\n"];
+"base_link" -> "right_wheel_f_1"[label=" Broadcaster: default_authority\nAverage rate: 0.744\nBuffer length: 4.033\nMost recent transform: 1724589638.376353\nOldest transform: 1724589634.342947\n"];
+"base_link" -> "right_wheel_r_1"[label=" Broadcaster: default_authority\nAverage rate: 0.744\nBuffer length: 4.033\nMost recent transform: 1724589638.376353\nOldest transform: 1724589634.342947\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1724589638.4859562"[ shape=plaintext ] ;
+}->"nozzle_link_1";
+}
